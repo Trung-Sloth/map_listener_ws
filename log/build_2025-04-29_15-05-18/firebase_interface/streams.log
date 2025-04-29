@@ -1,0 +1,24 @@
+[3.611s] Invoking command in '/home/trung/map_listener_ws/src/firebase_interface': PYTHONPATH=/home/trung/map_listener_ws/build/firebase_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/firebase_interface build --build-base /home/trung/map_listener_ws/build/firebase_interface/build install --record /home/trung/map_listener_ws/build/firebase_interface/install.log --single-version-externally-managed install_data
+[5.005s] running egg_info
+[5.009s] writing ../../build/firebase_interface/firebase_interface.egg-info/PKG-INFO
+[5.010s] writing dependency_links to ../../build/firebase_interface/firebase_interface.egg-info/dependency_links.txt
+[5.011s] writing entry points to ../../build/firebase_interface/firebase_interface.egg-info/entry_points.txt
+[5.012s] writing requirements to ../../build/firebase_interface/firebase_interface.egg-info/requires.txt
+[5.013s] writing top-level names to ../../build/firebase_interface/firebase_interface.egg-info/top_level.txt
+[5.022s] reading manifest file '../../build/firebase_interface/firebase_interface.egg-info/SOURCES.txt'
+[5.028s] writing manifest file '../../build/firebase_interface/firebase_interface.egg-info/SOURCES.txt'
+[5.029s] running build
+[5.029s] running build_py
+[5.032s] copying firebase_interface/firebase_gps_node.py -> /home/trung/map_listener_ws/build/firebase_interface/build/lib/firebase_interface
+[5.032s] running install
+[5.034s] running install_lib
+[5.037s] copying /home/trung/map_listener_ws/build/firebase_interface/build/lib/firebase_interface/firebase_gps_node.py -> /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface
+[5.040s] byte-compiling /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface/firebase_gps_node.py to firebase_gps_node.cpython-310.pyc
+[5.044s] running install_data
+[5.045s] running install_egg_info
+[5.053s] removing '/home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface-0.0.0-py3.10.egg-info' (and everything under it)
+[5.055s] Copying ../../build/firebase_interface/firebase_interface.egg-info to /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface-0.0.0-py3.10.egg-info
+[5.062s] running install_scripts
+[5.150s] Installing firebase_gps_node script to /home/trung/map_listener_ws/install/firebase_interface/lib/firebase_interface
+[5.152s] writing list of installed files to '/home/trung/map_listener_ws/build/firebase_interface/install.log'
+[5.280s] Invoked command in '/home/trung/map_listener_ws/src/firebase_interface' returned '0': PYTHONPATH=/home/trung/map_listener_ws/build/firebase_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/firebase_interface build --build-base /home/trung/map_listener_ws/build/firebase_interface/build install --record /home/trung/map_listener_ws/build/firebase_interface/install.log --single-version-externally-managed install_data

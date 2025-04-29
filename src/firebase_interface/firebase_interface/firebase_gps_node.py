@@ -29,7 +29,6 @@ class FirebaseGPSPublisher(Node):
                 point_msg = Point()
                 point_msg.x = float(data['lat'])
                 point_msg.y = float(data['lng'])
-                point_msg.z = 0.0
 
                 self.publisher_.publish(point_msg)
                 self.get_logger().info(f'GPS: lat={point_msg.x}, lng={point_msg.y}')
