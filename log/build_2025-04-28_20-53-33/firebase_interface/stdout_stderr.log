@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/firebase_interface/firebase_interface.egg-info
+writing ../../build/firebase_interface/firebase_interface.egg-info/PKG-INFO
+writing dependency_links to ../../build/firebase_interface/firebase_interface.egg-info/dependency_links.txt
+writing entry points to ../../build/firebase_interface/firebase_interface.egg-info/entry_points.txt
+writing requirements to ../../build/firebase_interface/firebase_interface.egg-info/requires.txt
+writing top-level names to ../../build/firebase_interface/firebase_interface.egg-info/top_level.txt
+writing manifest file '../../build/firebase_interface/firebase_interface.egg-info/SOURCES.txt'
+reading manifest file '../../build/firebase_interface/firebase_interface.egg-info/SOURCES.txt'
+writing manifest file '../../build/firebase_interface/firebase_interface.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/trung/map_listener_ws/build/firebase_interface/build
+creating /home/trung/map_listener_ws/build/firebase_interface/build/lib
+creating /home/trung/map_listener_ws/build/firebase_interface/build/lib/firebase_interface
+copying firebase_interface/firebase_gps.py -> /home/trung/map_listener_ws/build/firebase_interface/build/lib/firebase_interface
+copying firebase_interface/__init__.py -> /home/trung/map_listener_ws/build/firebase_interface/build/lib/firebase_interface
+running install
+running install_lib
+creating /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface
+copying /home/trung/map_listener_ws/build/firebase_interface/build/lib/firebase_interface/firebase_gps.py -> /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface
+copying /home/trung/map_listener_ws/build/firebase_interface/build/lib/firebase_interface/__init__.py -> /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface
+byte-compiling /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface/firebase_gps.py to firebase_gps.cpython-310.pyc
+byte-compiling /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/trung/map_listener_ws/install/firebase_interface/share/ament_index
+creating /home/trung/map_listener_ws/install/firebase_interface/share/ament_index/resource_index
+creating /home/trung/map_listener_ws/install/firebase_interface/share/ament_index/resource_index/packages
+copying resource/firebase_interface -> /home/trung/map_listener_ws/install/firebase_interface/share/ament_index/resource_index/packages
+copying package.xml -> /home/trung/map_listener_ws/install/firebase_interface/share/firebase_interface
+running install_egg_info
+Copying ../../build/firebase_interface/firebase_interface.egg-info to /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface-0.0.0-py3.10.egg-info
+running install_scripts
+Installing firebase_gps_publisher script to /home/trung/map_listener_ws/install/firebase_interface/lib/firebase_interface
+writing list of installed files to '/home/trung/map_listener_ws/build/firebase_interface/install.log'

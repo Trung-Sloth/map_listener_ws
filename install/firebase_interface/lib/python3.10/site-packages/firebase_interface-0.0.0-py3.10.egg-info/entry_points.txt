@@ -1,0 +1,3 @@
+[console_scripts]
+firebase_gps_node = firebase_interface.firebase_gps_node:main
+

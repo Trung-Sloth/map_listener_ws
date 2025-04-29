@@ -1,0 +1,82 @@
+[0.000000] (-) TimerEvent: {}
+[0.001771] (firebase_interface) JobQueued: {'identifier': 'firebase_interface', 'dependencies': OrderedDict()}
+[0.002476] (firebase_interface) JobStarted: {'identifier': 'firebase_interface'}
+[0.098937] (-) TimerEvent: {}
+[0.199641] (-) TimerEvent: {}
+[0.300369] (-) TimerEvent: {}
+[0.401143] (-) TimerEvent: {}
+[0.501844] (-) TimerEvent: {}
+[0.602677] (-) TimerEvent: {}
+[0.703356] (-) TimerEvent: {}
+[0.804086] (-) TimerEvent: {}
+[0.904844] (-) TimerEvent: {}
+[1.005497] (-) TimerEvent: {}
+[1.106191] (-) TimerEvent: {}
+[1.206965] (-) TimerEvent: {}
+[1.307718] (-) TimerEvent: {}
+[1.408500] (-) TimerEvent: {}
+[1.509373] (-) TimerEvent: {}
+[1.610493] (-) TimerEvent: {}
+[1.711317] (-) TimerEvent: {}
+[1.812238] (-) TimerEvent: {}
+[1.913403] (-) TimerEvent: {}
+[2.014199] (-) TimerEvent: {}
+[2.114980] (-) TimerEvent: {}
+[2.215832] (-) TimerEvent: {}
+[2.316522] (-) TimerEvent: {}
+[2.417236] (-) TimerEvent: {}
+[2.517900] (-) TimerEvent: {}
+[2.618569] (-) TimerEvent: {}
+[2.719281] (-) TimerEvent: {}
+[2.819987] (-) TimerEvent: {}
+[2.920740] (-) TimerEvent: {}
+[3.021483] (-) TimerEvent: {}
+[3.122298] (-) TimerEvent: {}
+[3.223046] (-) TimerEvent: {}
+[3.323770] (-) TimerEvent: {}
+[3.424540] (-) TimerEvent: {}
+[3.525520] (-) TimerEvent: {}
+[3.627115] (-) TimerEvent: {}
+[3.638852] (firebase_interface) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/firebase_interface', 'build', '--build-base', '/home/trung/map_listener_ws/build/firebase_interface/build', 'install', '--record', '/home/trung/map_listener_ws/build/firebase_interface/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/trung/map_listener_ws/src/firebase_interface', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'trung', 'SSH_CLIENT': '172.20.10.3 43878 22', 'LC_TIME': 'vi_VN', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/trung/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/trung/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/trung', 'OLDPWD': '/home/trung/.vscode-server', 'TERM_PROGRAM_VERSION': '1.97.2', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-8a32a835-e29f-43d0-86a5-53f7a274628e.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/trung/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'vi_VN', 'VSCODE_GIT_ASKPASS_NODE': '/home/trung/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/trung/map_listener_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'trung', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '5', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/trung/.local/bin:/home/trung/.vscode-server/cli/servers/Stable-e54c774e0add60467559eb0d1e229c6452cf8447/server/bin/remote-cli:/home/trung/.local/bin:/home/trung/.local/bin:/opt/ros/humble/bin:/home/trung/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'vi_VN', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'vi_VN', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2fe9962adf.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/home/trung/map_listener_ws/install/firebase_interface:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'vi_VN', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'vi_VN', 'LC_IDENTIFICATION': 'vi_VN', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/trung/map_listener_ws/build/firebase_interface', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.20.10.3 43878 172.20.10.2 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/trung/map_listener_ws/build/firebase_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages:/home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'vi_VN', 'LC_PAPER': 'vi_VN', 'COLCON': '1'}, 'shell': False}
+[3.727191] (-) TimerEvent: {}
+[3.827984] (-) TimerEvent: {}
+[3.928787] (-) TimerEvent: {}
+[4.029563] (-) TimerEvent: {}
+[4.130288] (-) TimerEvent: {}
+[4.230995] (-) TimerEvent: {}
+[4.331684] (-) TimerEvent: {}
+[4.432435] (-) TimerEvent: {}
+[4.533141] (-) TimerEvent: {}
+[4.633821] (-) TimerEvent: {}
+[4.734512] (-) TimerEvent: {}
+[4.835257] (-) TimerEvent: {}
+[4.935973] (-) TimerEvent: {}
+[5.026272] (firebase_interface) StdoutLine: {'line': b'running egg_info\n'}
+[5.030353] (firebase_interface) StdoutLine: {'line': b'writing ../../build/firebase_interface/firebase_interface.egg-info/PKG-INFO\n'}
+[5.031593] (firebase_interface) StdoutLine: {'line': b'writing dependency_links to ../../build/firebase_interface/firebase_interface.egg-info/dependency_links.txt\n'}
+[5.032612] (firebase_interface) StdoutLine: {'line': b'writing entry points to ../../build/firebase_interface/firebase_interface.egg-info/entry_points.txt\n'}
+[5.033598] (firebase_interface) StdoutLine: {'line': b'writing requirements to ../../build/firebase_interface/firebase_interface.egg-info/requires.txt\n'}
+[5.034359] (firebase_interface) StdoutLine: {'line': b'writing top-level names to ../../build/firebase_interface/firebase_interface.egg-info/top_level.txt\n'}
+[5.036109] (-) TimerEvent: {}
+[5.043752] (firebase_interface) StdoutLine: {'line': b"reading manifest file '../../build/firebase_interface/firebase_interface.egg-info/SOURCES.txt'\n"}
+[5.048490] (firebase_interface) StdoutLine: {'line': b"writing manifest file '../../build/firebase_interface/firebase_interface.egg-info/SOURCES.txt'\n"}
+[5.049307] (firebase_interface) StdoutLine: {'line': b'running build\n'}
+[5.049834] (firebase_interface) StdoutLine: {'line': b'running build_py\n'}
+[5.050419] (firebase_interface) StdoutLine: {'line': b'copying firebase_interface/firebase_gps_node.py -> /home/trung/map_listener_ws/build/firebase_interface/build/lib/firebase_interface\n'}
+[5.051936] (firebase_interface) StdoutLine: {'line': b'running install\n'}
+[5.053422] (firebase_interface) StdoutLine: {'line': b'running install_lib\n'}
+[5.057614] (firebase_interface) StdoutLine: {'line': b'copying /home/trung/map_listener_ws/build/firebase_interface/build/lib/firebase_interface/firebase_gps_node.py -> /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface\n'}
+[5.060852] (firebase_interface) StdoutLine: {'line': b'byte-compiling /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface/firebase_gps_node.py to firebase_gps_node.cpython-310.pyc\n'}
+[5.064086] (firebase_interface) StdoutLine: {'line': b'running install_data\n'}
+[5.065836] (firebase_interface) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.073323] (firebase_interface) StdoutLine: {'line': b"removing '/home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.075249] (firebase_interface) StdoutLine: {'line': b'Copying ../../build/firebase_interface/firebase_interface.egg-info to /home/trung/map_listener_ws/install/firebase_interface/lib/python3.10/site-packages/firebase_interface-0.0.0-py3.10.egg-info\n'}
+[5.081508] (firebase_interface) StdoutLine: {'line': b'running install_scripts\n'}
+[5.136282] (-) TimerEvent: {}
+[5.168772] (firebase_interface) StdoutLine: {'line': b'Installing firebase_gps_publisher script to /home/trung/map_listener_ws/install/firebase_interface/lib/firebase_interface\n'}
+[5.170616] (firebase_interface) StdoutLine: {'line': b"writing list of installed files to '/home/trung/map_listener_ws/build/firebase_interface/install.log'\n"}
+[5.236530] (-) TimerEvent: {}
+[5.295522] (firebase_interface) CommandEnded: {'returncode': 0}
+[5.337304] (-) TimerEvent: {}
+[5.353689] (firebase_interface) JobEnded: {'identifier': 'firebase_interface', 'rc': 0}
+[5.357152] (-) EventReactorShutdown: {}
