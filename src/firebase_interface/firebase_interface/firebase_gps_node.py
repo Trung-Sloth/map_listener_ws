@@ -1,35 +1,36 @@
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32
+from geometry_msgs.msg import Point
 
 import firebase_admin
 from firebase_admin import credentials, db
 
 
-class FirebaseGPSPublisher(Node):
+class FirebaseUAVNode(Node):
     def __init__(self):
-        super().__init__('firebase_gps_publisher')
+        super().__init__('firebase_uav_node')
 
-        cred = credentials.Certificate('/home/trung/weather_app.json')  
+        cred = credentials.Certificate('/home/trung/weather_app.json') 
         firebase_admin.initialize_app(cred, {
             'databaseURL': 'https://map-1-b0eae-default-rtdb.asia-southeast1.firebasedatabase.app/'
         })
 
-        self.lat_pubs = [
-            self.create_publisher(Float32, 'lat1', 10),
-            self.create_publisher(Float32, 'lat2', 10),
-            self.create_publisher(Float32, 'lat3', 10),
-        ]
-        self.lng_pubs = [
-            self.create_publisher(Float32, 'lng1', 10),
-            self.create_publisher(Float32, 'lng2', 10),
-            self.create_publisher(Float32, 'lng3', 10),
+        self.point_pubs = [
+            self.create_publisher(Point, 'point1', 10),
+            self.create_publisher(Point, 'point2', 10),
+            self.create_publisher(Point, 'point3', 10),
         ]
 
-        self.timer = self.create_timer(2.0, self.publish_data)
-        self.get_logger().info('Firebase GPS publisher node started.')
+        self.timer = self.create_timer(1.0, self.publish_from_firebase)
 
-    def publish_data(self):
+        self.subscription = self.create_subscription(
+            Point,
+            'uav_position',
+            self.uav_callback,
+            10
+        )
+
+    def publish_from_firebase(self):
         try:
             for i in range(1, 4):
                 ref = db.reference(f'/Toa-do-{i}')
@@ -39,29 +40,36 @@ class FirebaseGPSPublisher(Node):
                     lat = float(data['lat'])
                     lng = float(data['lng'])
 
-                    lat_msg = Float32()
-                    lng_msg = Float32()
+                    msg = Point()
+                    msg.x = lat
+                    msg.y = lng
+                    msg.z = 0.0
 
-                    lat_msg.data = lat
-                    lng_msg.data = lng
-
-                    self.lat_pubs[i - 1].publish(lat_msg)
-                    self.lng_pubs[i - 1].publish(lng_msg)
-
-                    self.get_logger().info(f'Toa-do-{i} - lat={lat}, lng={lng}')
+                    self.point_pubs[i - 1].publish(msg)
+                    self.get_logger().info(f'Toa-do-{i}: x={lat}, y={lng}')
                 else:
-                    self.get_logger().warn(f'Toa-do-{i} missing lat/lng or not found')
-
-                if i==3:
-                    print("********\n")
+                    self.get_logger().warn(f'No data: Toa-do-{i}')
+            print("********\n")
 
         except Exception as e:
-            self.get_logger().error(f'Error accessing Firebase: {e}')
+            self.get_logger().error(f'Error reading data from Firebase: {e}')
+
+    def uav_callback(self, msg):
+        lat_cur = msg.x
+        lng_cur = msg.y
+        try:
+            db.reference('/Toa-do-hien-tai').set({
+                'lat_cur': lat_cur,
+                'lng_cur': lng_cur
+            })
+            self.get_logger().info(f'Toa-do-hien-tai: lat_cur={lat_cur}, lng_cur={lng_cur}')
+        except Exception as e:
+            self.get_logger().error(f'Error sending data to Firebase: {e}')
 
 
 def main(args=None):
     rclpy.init(args=args)
-    node = FirebaseGPSPublisher()
+    node = FirebaseUAVNode()
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
