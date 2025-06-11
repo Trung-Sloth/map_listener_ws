@@ -57,12 +57,14 @@ class FirebaseUAVNode(Node):
     def uav_callback(self, msg):
         lat_cur = msg.x
         lng_cur = msg.y
+        #status  = msg.z
         try:
             db.reference('/Toa-do-hien-tai').set({
                 'lat_cur': lat_cur,
-                'lng_cur': lng_cur
+                'lng_cur': lng_cur,
+                #'status' : status
             })
-            self.get_logger().info(f'Toa-do-hien-tai: lat_cur={lat_cur}, lng_cur={lng_cur}')
+            self.get_logger().info(f'Toa-do-hien-tai: lat_cur={lat_cur}, lng_cur={lng_cur}, status={status}')
         except Exception as e:
             self.get_logger().error(f'Error sending data to Firebase: {e}')
 
